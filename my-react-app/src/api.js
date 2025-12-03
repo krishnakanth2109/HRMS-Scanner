@@ -1,0 +1,18 @@
+import axios from "axios";
+
+const API_URL = "http://localhost:5000/api/attendance";
+
+export const getAttendance = async (employeeId) => {
+  const res = await axios.get(`${API_URL}/${employeeId}`);
+  return res.data;
+};
+
+export const punchIn = async (data) => {
+  const res = await axios.post(`${API_URL}/punch-in`, data);
+  return res.data;
+};
+
+export const punchOut = async (data) => {
+  const res = await axios.post(`${API_URL}/punch-out`, data);
+  return res.data;
+};
