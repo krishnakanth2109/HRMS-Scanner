@@ -13,6 +13,7 @@ const app = express();
 const allowedOrigins = [
   'https://hrms-scanner.netlify.app',
   'http://hrms-scanner.netlify.app',
+  'https://hrms-scanner.onrender.com',
   'http://localhost:3000',
   'http://localhost:5173',
   'http://localhost:3001'
