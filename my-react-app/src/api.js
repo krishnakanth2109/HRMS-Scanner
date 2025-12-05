@@ -2,7 +2,7 @@ import axios from "axios";
 
 // UPDATED: Reads from .env (VITE_API_URL) with a local fallback
 const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
-const API_URL = `${BASE_URL}/attendance`;
+const API_URL = `${BASE_URL}/api/attendance`;
 
 export const getAttendance = async (employeeId) => {
   const res = await axios.get(`${API_URL}/${employeeId}`);

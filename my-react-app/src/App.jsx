@@ -8,7 +8,7 @@ import "./Appstyle.css";
 
 // UPDATED: Reads from .env (VITE_API_URL) with a local fallback
 const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
-const API_URL = `${BASE_URL}/attendance`;
+const API_URL = `${BASE_URL}/api/attendance`;
 
 const App = () => {
   const [view, setView] = useState("LOADING"); 
